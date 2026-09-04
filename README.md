@@ -45,4 +45,26 @@ sum of quantities by category
 dashboard preview
 <img width="1366" height="768" alt="Screenshot (74)" src="https://github.com/user-attachments/assets/f41f72a7-44eb-41d5-9c32-6b8bc19b3adf" />
 
+E-commerce-bi-analysis/
+├── README.md
+├── data/
+│   └── clean_final_data.csv
+├── sql/
+│   └── E-commerce_db sql.sql
+└── dashboard/
+    └── E-commerce dashboard.pbix
 
+    ## 🚀 How to Reproduce
+
+1. Clone this repository:
+2. Open **PostgreSQL (pgAdmin)** and create a new database (e.g. `E-commerce_db`)
+
+3. Run the script `E-commerce_db sql.sql` in the Query Tool to create all tables and load the analytical queries
+
+4. Import your CSV data into the tables using the `\copy` commands included in the script (update the file paths to match your local CSV location)
+
+5. Open `E-commerce dashboard.pbix` in **Power BI Desktop**
+
+6. Go to **Transform Data → Data Source Settings**, and update the PostgreSQL connection to point to your own database (server, port, database name, credentials)
+
+7. Click **Refresh** to load your data into the dashboard
